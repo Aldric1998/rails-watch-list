@@ -1,0 +1,10 @@
+<h1>Bookmarks#show</h1>
+<h2><%= @bookmark.comment %></h2>
+<p><%= @bookmark.list_id %></p>
+<p><%= @bookmark.movie_id %></p>
+<p> ----- <%= link_to 'bookmarking', new_list_bookmark_path(@bookmark)%> ---- </p>
+<%= link_to 'back', list_path%>
+<%= link_to "Delete #{@bookmark.comment}",
+            bookmark_path(@bookmark),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>

@@ -1,0 +1,17 @@
+<h1>lists</h1>
+  <div class="row">
+    <% @lists.each do |list| %>
+       <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <%= list.name %>
+            <p> ----------- </p>
+            <%= "Category: #{list.name}"  %>
+            <%= link_to 'details', list%>
+          </div>
+      </div>
+    <% end %>
+  </div>
+  <p>------</p>
+  <div><p>Adding new lists</p></div>
+
+  <p> ----- <%= link_to 'Add', new_list_path%> ---- </p>
