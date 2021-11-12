@@ -2,6 +2,6 @@
 <%=simple_form_for [@list, @bookmark] do |field|%>
 <%=field.input :comment %>
 <%=field.association :movie %>
-<%=field.button :submit%>
+<button class="m-2"><%=field.button :submit%></button>
 <%end%>
-<p> ----- <%= link_to 'back', lists_path%> ---- </p>
+<button class="m-2"> <%= link_to 'back', lists_path%> </button>

@@ -6,7 +6,7 @@
             <%= list.name %>
             <p> ----------- </p>
             <%= "Category: #{list.name}"  %>
-            <%= link_to 'details', list%>
+            <button class="m-2"><%= link_to 'details', list%></button>
           </div>
       </div>
     <% end %>
@@ -14,4 +14,4 @@
   <hr>
   <div><p>Adding new lists</p></div>
   <hr>
-  <p><%= link_to 'Add', new_list_path%> </p>
+  <button class="m-2"><p><%= link_to 'Add', new_list_path%> </p></button>

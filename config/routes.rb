@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   # get 'lists/show'
   # get 'lists/edit'
   # get 'lists/create'
-
+  root to: 'lists#index'
   resources :lists, only: %i[index new create show] do
     resources :bookmarks, only: %i[new create show]
   end
