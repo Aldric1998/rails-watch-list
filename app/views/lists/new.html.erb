@@ -1,6 +1,7 @@
 <h1>new lists</h1>
 <%=simple_form_for(@list) do |field|%>
 <%=field.input :name %>
-<%=field.button :submit%>
+<button class="m-2"><%=field.button :submit%></button>
 <%end%>
-<p> ----- <%= link_to 'back', lists_path%> ---- </p>
+<hr>
+<button class="m-2"><%= link_to 'back', lists_path%> </button>
